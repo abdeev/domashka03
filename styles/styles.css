@@ -56,7 +56,6 @@ li > .accent-button {
 .header {
   background-color: var(--bg-head-color);
   width: 1166px;
-  height: 80px;
   padding: 0 215px;
   margin: 0 auto;
   border: 1px solid var(--borders-color);
@@ -141,8 +140,7 @@ li > .accent-button {
 .button {
   display: block;
   width: 200px;
-  height: 50px;
-  padding: 0px 0px;
+  padding: 9px 0px;
   margin: 30px auto;
   border-radius: 4px;
   border-style: none;
@@ -303,7 +301,6 @@ li > .accent-button {
 /* Підвал ===================================================*/
 .footer {
   width: 1600px;
-  height: 252px;
   padding: 0px 0px;
   margin: 0px auto;
   background-color: var(--bg-foot-color);
@@ -378,7 +375,6 @@ li > .accent-button {
 
 .projects-list-card {
   width: 370px;
-  border: 1px solid var(--borders-color);
   margin: 0;
   padding: 0px;
 }
@@ -389,6 +385,9 @@ li > .accent-button {
 }
 .card-description {
   padding: 20px 24px;
+  margin-top: -4px;
+  border: 1px solid var(--borders-color);
+  border-top: 0px;
 }
 .projects-list-title {
   text-align: left;
