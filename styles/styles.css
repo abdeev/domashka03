@@ -253,16 +253,6 @@ li > .accent-button {
   margin: 0px auto;
   padding: 0px 0px;
 }
-.team-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--header-dark-color);
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
 .team-list {
   display: flex;
   gap: 30px;
@@ -281,6 +271,8 @@ li > .accent-button {
   border-radius: 0px 0px 4px 4px;
 }
 .team-header {
+  margin-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -296,7 +288,7 @@ li > .accent-button {
   letter-spacing: 0.03em;
   color: var(--text-description-color);
   margin-top: 10px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 /* Підвал ===================================================*/
 .footer {
