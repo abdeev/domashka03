@@ -1,0 +1,407 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  /* color palette */
+  --body-main-color: #757575;
+  --logo-web-color: #2196f3;
+  --logo-studio-dark: #000000;
+  --logo-studio-light: #ffffff;
+  --bg-head-color: #ffffff;
+  --bg-foot-color: #2f303a;
+  --bg-body-color: #e5e5e5;
+  --header-dark-color: #212121;
+  --borders-color: #ececec;
+  --btn-bg-accent-color: #2196f3;
+  --btn-text-accent-color: #ffffff;
+  --btn-bg-def-color: #f5f4fa;
+  --block-bg-white-color: #f5f4fa;
+  --btn-text-def-color: #212121;
+  --btn-bg-hover-color: #188ce8;
+  --text-description-color: #757575;
+}
+.body {
+  font-family: "Roboto";
+  color: var(--body-main-color);
+  background-color: var(--bg-body-color);
+  margin-top: 0px;
+}
+ul {
+  list-style: none;
+  margin: 0 auto;
+  padding-inline-start: 0px;
+}
+
+.contacts-item:hover,
+.nav-item:hover,
+.footer-contacts:hover,
+.contacts-item:focus,
+.nav-item:focus,
+.footer-contacts:focus {
+  color: var(--btn-bg-accent-color);
+  cursor: pointer;
+}
+.button-filter:hover,
+.button-filter:focus {
+  background-color: var(--btn-bg-hover-color);
+  color: var(--btn-text-accent-color);
+}
+li > .accent-button {
+  color: var(--btn-bg-accent-color);
+}
+/* CSS HEADER =============================================*/
+.header {
+  background-color: var(--bg-head-color);
+  width: 1166px;
+  height: 80px;
+  padding: 0 215px;
+  margin: 0 auto;
+  border: 1px solid var(--borders-color);
+}
+
+.logo-web {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--logo-web-color);
+}
+.logo-studio {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--logo-studio-dark);
+}
+.nav {
+  display: flex;
+  width: 1170px;
+  padding: 0 0px;
+  margin: 0 auto;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  margin-left: 94px;
+  margin-right: 0;
+  gap: 50px;
+}
+.nav-item {
+  display: block;
+  padding: 32px 0;
+  text-decoration: none;
+  align-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--header-dark-color);
+}
+.contacts {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0px;
+  gap: 50px;
+}
+.contacts-item {
+  padding: 32px 0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--body-main-color);
+}
+/* блок замовити послугу=================================== */
+.button-block {
+  width: 1600px;
+  margin: 0 auto;
+  height: 600px;
+  background: var(--bg-foot-color);
+}
+.head-text-button {
+  width: 700px;
+  margin: 0px auto;
+  padding-top: 200px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--btn-text-accent-color);
+}
+.button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  padding: 0px 0px;
+  margin: 30px auto;
+  border-radius: 4px;
+  border-style: none;
+  background-color: var(--btn-bg-accent-color);
+  color: var(--btn-text-accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.button:hover {
+  background-color: var(--btn-bg-hover-color);
+  cursor: pointer;
+}
+.button:focus {
+  background-color: var(--btn-bg-hover-color);
+  cursor: pointer;
+}
+
+/* Наші особливості =========================================*/
+.features {
+  background-color: var(--bg-head-color);
+  justify-content: center;
+  align-items: center;
+  width: 1170px;
+  padding: 94px 215px 47px 215px;
+  margin: -0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.features-list {
+  display: flex;
+  padding: 0px;
+}
+.features-card {
+  width: 270px;
+  margin: 0 15px;
+}
+.features-card:first-child {
+  margin-left: 0px;
+}
+.features-card:last-child {
+  margin-right: 0px;
+}
+.features-card-header {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--header-dark-color);
+  margin: 0 0;
+}
+.features-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-description-color);
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+/* Чим ми займаймося ========================================*/
+.we-do {
+  background-color: var(--bg-head-color);
+  width: 1170px;
+  padding: 47px 215px 94px 215px;
+  margin: 0 auto;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-dark-color);
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
+.we-do-list {
+  display: flex;
+  gap: 30px;
+  padding: 0px 0px;
+}
+.we-do-item {
+  margin: 0px auto;
+}
+/* Наша команда =============================================*/
+.team-block {
+  width: 1170px;
+  padding: 94px 215px;
+  margin: 0px auto;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--block-bg-white-color);
+}
+.team-block > ul {
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+.team-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-dark-color);
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.team-card {
+  width: 270px;
+  padding: 0px;
+  background-color: var(--block-bg-white-color);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-dark-color);
+}
+.team-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-description-color);
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+/* Підвал ===================================================*/
+.footer {
+  width: 1600px;
+  height: 252px;
+  padding: 0px 0px;
+  margin: 0px auto;
+  background-color: var(--bg-foot-color);
+}
+.container {
+  width: 1170px;
+  padding: 60px 215px;
+  margin: 0px auto;
+}
+.logo-studio-footer {
+  color: var(--logo-studio-light);
+}
+.address {
+  margin-top: 20px;
+  list-style: normal;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-contacts-addr {
+  text-decoration: none;
+  color: var(--bg-head-color);
+}
+.footer-contacts {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* Стилі до сторінки Портфоліо  ============================*/
+.portfolio-main {
+  width: 1600px;
+  padding-bottom: 94px;
+  margin: 0 auto;
+  background-color: var(--bg-head-color);
+}
+.projects-container {
+  width: 1170px;
+  padding: 0px 215px;
+  margin: 0 auto;
+  background-color: var(--bg-head-color);
+}
+.sort-buttons {
+  display: flex;
+  gap: 8px;
+  padding: 94px 215px 50px 215px;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: var(--bg-head-color);
+}
+.button-filter {
+  background-color: var(--bg-head-color);
+  color: var(--btn-text-def-color);
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-style: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.active-btn {
+  background-color: var(--btn-bg-accent-color);
+  color: var(--btn-text-accent-color);
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.projects-list-card {
+  width: 370px;
+  border: 1px solid var(--borders-color);
+  margin: 0;
+  padding: 0px;
+}
+.project-item {
+  width: 370px;
+  margin: 15px;
+  background-color: var(--bg-head-color);
+}
+.card-description {
+  padding: 20px 24px;
+}
+.projects-list-title {
+  text-align: left;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--header-dark-color);
+}
+.projects-list-desription {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--text-description-color);
+}

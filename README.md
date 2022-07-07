@@ -1,2 +1,3 @@
-# domashka03
-homework 03 Flexboxes
+# domashka-02
+ 
+https://abdeev.github.io/domashka-02/
