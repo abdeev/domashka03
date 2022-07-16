@@ -23,46 +23,47 @@
 
   <body class="body">
     <!-- верхнє меню -->
-    <header class="header container">
-      <nav class="nav">
-        <!-- логотип -->
-        <div class="box-logo">
+    <header class="section header">
+      <div class="container flex">
+        <nav class="nav">
+          <!-- логотип -->
           <a class="logo-web" href="./index.html">Web<span class="logo-studio">Studio</span></a>
-        </div>
-        <div class="box-navi">
-          <ul class="nav-list">
-            <li><a class="nav-item accent-button" href="./index.html">Студія</a></li>
+
+          <div class="box-navi">
+            <ul class="nav-list">
+              <li><a class="nav-item accent-button" href="./index.html">Студія</a></li>
+              <li>
+                <a class="nav-item" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li><a class="nav-item" href="./index.html">Контакти</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- контакти mailto phoneto-->
+        <div class="box-contacts">
+          <ul class="contacts">
             <li>
-              <a class="nav-item" href="./portfolio.html">Портфоліо</a>
+              <a class="contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li><a class="nav-item" href="./index.html">Контакти</a></li>
+            <li>
+              <a class="contacts-item" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </div>
-      </nav>
-      <!-- контакти mailto phoneto-->
-      <div class="box-contacts">
-        <ul class="contacts">
-          <li>
-            <a class="contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li>
-            <a class="contacts-item" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
       </div>
     </header>
 
     <main>
       <!-- блок із кнопкою замовити послугу -->
-      <section class="section button-block">
-        <div class="box-decisions">
-          <h1 class="head-text-button">Еффективні рішення для вашого бізнесу</h1>
+      <section class="section hero">
+        <div class="container">
+          <h1 class="hero-text-button">Еффективні рішення для вашого бізнесу</h1>
           <button class="button-order" type="button">Замовити послугу</button>
         </div>
       </section>
       <!-- наші особливості -->
-      <section class="container features">
-        <div class="box-features">
+      <section class="section features">
+        <div class="container">
           <h2 class="visually-hidden">особливості</h2>
           <ul class="features-list">
             <li class="features-card">
@@ -96,8 +97,8 @@
         </div>
       </section>
       <!-- чим ми займаємось -->
-      <section class="container directions">
-        <div class="box-directions">
+      <section class="section directions">
+        <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="directions-list">
             <li class="directions-item">
@@ -114,8 +115,8 @@
       </section>
 
       <!-- наша команда -->
-      <section class="container team-block">
-        <div class="box-team">
+      <section>
+        <div class="container team-block">
           <h2 class="section-title">Наша команда</h2>
           <ul>
             <li class="team-list">
@@ -166,34 +167,32 @@
     </main>
 
     <!-- підвал -->
-    <footer class="container footer">
-      <section>
-        <div class="box-footer">
-          <!-- логотип футера-->
-          <a class="logo-web" href="./index.html"
-            >Web<span class="logo-studio-footer">Studio</span></a
-          >
+    <footer class="footer">
+      <div class="container padding-footer">
+        <!-- логотип футера-->
+        <a class="logo-web" href="./index.html"
+          >Web<span class="logo-studio-footer">Studio</span></a
+        >
 
-          <!-- зворотня адреса -->
-          <address class="address">
-            <ul>
-              <li>
-                <a
-                  class="footer-contacts-addr"
-                  href="https://www.google.com/maps/d/embed?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ehbc=2E312F"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
-              </li>
-              <li>
-                <a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li>
-                <a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-      </section>
+        <!-- зворотня адреса -->
+        <address class="address">
+          <ul>
+            <li>
+              <a
+                class="footer-contacts-addr"
+                href="https://www.google.com/maps/d/embed?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ehbc=2E312F"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li>
+              <a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

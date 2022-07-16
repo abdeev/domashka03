@@ -6,7 +6,7 @@
 
 :root {
   /* color palette */
-  --main-color: #000000;
+  --main-header-color: #000000;
   --bg-body-color: #e5e5e5;
   --logo-web-color: #2196f3;
   --logo-studio-dark: #000000;
@@ -26,7 +26,7 @@
 }
 .body {
   font-family: 'Roboto';
-  color: var(--main-color);
+  color: var(--main-header-color-color);
   background-color: var(--bg-body-color);
   margin-top: 0px;
 }
@@ -45,25 +45,41 @@ ul {
   color: var(--btn-bg-accent-color);
   cursor: pointer;
 }
-.button-filter:hover,
-.button-filter:focus {
-  background-color: var(--btn-bg-hover-color);
-  color: var(--btn-text-accent-color);
-}
+
 li > .accent-button {
   color: var(--btn-bg-accent-color);
 }
 .container {
   width: 1200px;
-  padding: 0 200px;
+  padding: 0 15px;
   margin: 0 auto;
-  background-color: var(--body-color);
+  align-items: center;
+}
+.section {
+  width: 1600px;
+  padding: 94px 0;
+  margin: 0 auto;
+  background-color: var(--bg-head-color);
+}
+.flex {
+  display: flex;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /* CSS HEADER =============================================*/
 .header {
-  display: flex;
+  padding: 0;
   border-bottom: 1px solid var(--borders-color);
-  align-items: center;
 }
 .box-logo {
   padding-left: 15px;
@@ -133,7 +149,7 @@ li > .accent-button {
   width: 696px;
   margin: 0 auto;
 }
-.button-block {
+.hero {
   width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -141,12 +157,12 @@ li > .accent-button {
   text-align: center;
   background: var(--bg-foot-color);
 }
-.head-text-button {
+.hero-text-button {
+  width: 600px;
   margin: 0 auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--btn-text-accent-color);
@@ -165,11 +181,11 @@ li > .accent-button {
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.button:hover {
+.button-order:hover {
   background-color: var(--btn-bg-hover-color);
   cursor: pointer;
 }
-.button:focus {
+.button-order:focus {
   background-color: var(--btn-bg-hover-color);
   cursor: pointer;
 }
@@ -177,23 +193,6 @@ li > .accent-button {
 /* Наші особливості =========================================*/
 .features {
   background-color: var(--bg-head-color);
-}
-.box-features {
-  padding-top: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 .features-list {
   display: flex;
@@ -228,13 +227,8 @@ li > .accent-button {
   margin-bottom: 0;
 }
 /* Чим ми займаймося ========================================*/
-.box-directions {
-  padding: 0 15px;
-}
 .directions {
   background-color: var(--bg-head-color);
-  padding: 94px 200px;
-  margin: 0 auto;
 }
 .section-title {
   font-weight: 700;
@@ -258,6 +252,7 @@ li > .accent-button {
   padding: 94px 15px;
 }
 .team-block {
+  padding: 94px 200px;
   background-color: var(--block-bg-white-color);
 }
 .team-block > ul {
@@ -304,9 +299,11 @@ li > .accent-button {
 }
 /* Підвал ===================================================*/
 .footer {
+  width: 1600px;
+  margin: 0 auto;
   background-color: var(--bg-foot-color);
 }
-.box-footer {
+.padding-footer {
   padding: 60px 15px;
 }
 .logo-studio-footer {
