@@ -56,9 +56,8 @@ li > .accent-button {
   align-items: center;
 }
 .section {
-  width: 1600px;
   padding: 94px 0;
-  margin: 0 auto;
+  margin: 0 560px;
   background-color: var(--bg-head-color);
 }
 .flex {
@@ -87,7 +86,6 @@ li > .accent-button {
 }
 .box-navi {
   margin-left: 93px;
-  margin-right: 0;
 }
 .logo-web {
   text-decoration: none;
@@ -109,7 +107,6 @@ li > .accent-button {
 }
 .nav {
   display: flex;
-  margin-left: 0px;
   margin-right: auto;
   align-items: center;
 }
@@ -150,10 +147,9 @@ li > .accent-button {
   margin: 0 auto;
 }
 .hero {
-  width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin: 0 auto;
+  margin: 0 560px;
   text-align: center;
   background: var(--bg-foot-color);
 }
@@ -192,6 +188,7 @@ li > .accent-button {
 
 /* Наші особливості =========================================*/
 .features {
+  padding: 0 200px;
   background-color: var(--bg-head-color);
 }
 .features-list {
@@ -228,6 +225,7 @@ li > .accent-button {
 }
 /* Чим ми займаймося ========================================*/
 .directions {
+  padding: 0 200px;
   background-color: var(--bg-head-color);
 }
 .section-title {
@@ -255,10 +253,7 @@ li > .accent-button {
   padding: 94px 200px;
   background-color: var(--block-bg-white-color);
 }
-.team-block > ul {
-  margin: 0px auto;
-  padding: 0px 0px;
-}
+
 .team-list {
   display: flex;
   gap: 30px;
@@ -269,7 +264,6 @@ li > .accent-button {
 .team-card {
   width: 270px;
   padding: 0px;
-  background-color: var(--block-bg-white-color);
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -299,8 +293,7 @@ li > .accent-button {
 }
 /* Підвал ===================================================*/
 .footer {
-  width: 1600px;
-  margin: 0 auto;
+  margin: 0 560px;
   background-color: var(--bg-foot-color);
 }
 .padding-footer {
