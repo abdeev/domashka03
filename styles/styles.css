@@ -56,9 +56,7 @@ li > .accent-button {
   align-items: center;
 }
 .section {
-  max-width: 1600px;
   padding: 94px 0;
-  margin: 0 auto;
   background-color: var(--bg-head-color);
 }
 .flex {
@@ -143,14 +141,9 @@ li > .accent-button {
   color: var(--text-description-color);
 }
 /* блок замовити послугу=================================== */
-.box-decisions {
-  width: 696px;
-  margin: 0 auto;
-}
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  margin: 0 auto;
   text-align: center;
   background: var(--bg-foot-color);
 }
@@ -188,10 +181,6 @@ li > .accent-button {
 }
 
 /* Наші особливості =========================================*/
-.features {
-  padding: 0 200px;
-  background-color: var(--bg-head-color);
-}
 .features-list {
   display: flex;
   padding: 0px;
@@ -226,8 +215,7 @@ li > .accent-button {
 }
 /* Чим ми займаймося ========================================*/
 .directions {
-  padding: 0 200px;
-  background-color: var(--bg-head-color);
+  padding-top: 0;
 }
 .section-title {
   font-weight: 700;
@@ -240,7 +228,7 @@ li > .accent-button {
 }
 .directions-list {
   display: flex;
-  padding-top: 50px;
+  margin-top: 50px;
   gap: 30px;
 }
 .directions-item {
@@ -251,7 +239,6 @@ li > .accent-button {
   padding: 94px 15px;
 }
 .team-block {
-  padding: 94px 200px;
   background-color: var(--block-bg-white-color);
 }
 
@@ -294,7 +281,7 @@ li > .accent-button {
 }
 /* Підвал ===================================================*/
 .footer {
-  max-width: 1600px;
+  padding: 60px 0;
   margin: 0 auto;
   background-color: var(--bg-foot-color);
 }
@@ -312,6 +299,10 @@ li > .accent-button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.addr-item:not(:first-child) {
+  margin-top: 9px;
 }
 .footer-contacts-addr {
   text-decoration: none;

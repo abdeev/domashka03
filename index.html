@@ -17,6 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/style-portfolio.css" />
   </head>
@@ -63,7 +64,7 @@
       </section>
       <!-- наші особливості -->
       <section class="section">
-        <div class="container features">
+        <div class="container">
           <h2 class="visually-hidden">особливості</h2>
           <ul class="features-list">
             <li class="features-card">
@@ -97,8 +98,8 @@
         </div>
       </section>
       <!-- чим ми займаємось -->
-      <section class="section">
-        <div class="container directions">
+      <section class="section directions">
+        <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="directions-list">
             <li class="directions-item">
@@ -115,51 +116,29 @@
       </section>
 
       <!-- наша команда -->
-      <section>
-        <div class="container team-block">
+      <section class="section team-block">
+        <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul>
-            <li class="team-list">
-              <ul class="team-card">
-                <li>
-                  <img
-                    src="./images/team/igordemianenko.jpg"
-                    alt="Фото Ігор Дем'яненко"
-                    width="270"
-                  />
-                  <h3 class="team-header">Ігор Дем'яненко</h3>
-                  <p class="team-description">Product Designer</p>
-                </li>
-              </ul>
-              <ul class="team-card">
-                <li>
-                  <img src="./images/team/olgarepina.jpg" alt="Фото Ольга Репіна" width="270" />
-                  <h3 class="team-header">Ольга Репіна</h3>
-                  <p class="team-description">Frontend Developer</p>
-                </li>
-              </ul>
-              <ul class="team-card">
-                <li>
-                  <img
-                    src="./images/team/nikolaitarasov.jpg"
-                    alt="Фото Микола Тарасов"
-                    width="270"
-                  />
-                  <h3 class="team-header">Микола Тарасов</h3>
-                  <p class="team-description">Marketing</p>
-                </li>
-              </ul>
-              <ul class="team-card">
-                <li>
-                  <img
-                    src="./images/team/mikhailermakov.jpg"
-                    alt="Фото Михайло Єрмаков"
-                    width="270"
-                  />
-                  <h3 class="team-header">Михайло Єрмаков</h3>
-                  <p class="team-description">UI Designer</p>
-                </li>
-              </ul>
+          <ul class="team-list">
+            <li class="team-card">
+              <img src="./images/team/igordemianenko.jpg" alt="Фото Ігор Дем'яненко" width="270" />
+              <h3 class="team-header">Ігор Дем'яненко</h3>
+              <p class="team-description">Product Designer</p>
+            </li>
+            <li class="team-card">
+              <img src="./images/team/olgarepina.jpg" alt="Фото Ольга Репіна" width="270" />
+              <h3 class="team-header">Ольга Репіна</h3>
+              <p class="team-description">Frontend Developer</p>
+            </li>
+            <li class="team-card">
+              <img src="./images/team/nikolaitarasov.jpg" alt="Фото Микола Тарасов" width="270" />
+              <h3 class="team-header">Микола Тарасов</h3>
+              <p class="team-description">Marketing</p>
+            </li>
+            <li class="team-card">
+              <img src="./images/team/mikhailermakov.jpg" alt="Фото Михайло Єрмаков" width="270" />
+              <h3 class="team-header">Михайло Єрмаков</h3>
+              <p class="team-description">UI Designer</p>
             </li>
           </ul>
         </div>
@@ -184,10 +163,10 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li>
+            <li class="addr-item">
               <a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li>
+            <li class="addr-item">
               <a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
