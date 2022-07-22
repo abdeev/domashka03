@@ -23,7 +23,7 @@
 
   <body class="body">
     <!-- верхнє меню -->
-    <header class="section header">
+    <header class="header">
       <div class="container flex">
         <nav class="nav">
           <!-- логотип -->
@@ -31,16 +31,16 @@
 
           <div class="box-navi">
             <ul class="nav-list">
-              <li><a class="nav-item" href="./index.html">Студія</a></li>
+              <li><a class="nav-item accent-button" href="./index.html">Студія</a></li>
               <li>
-                <a class="nav-item accent-button" href="./portfolio.html">Портфоліо</a>
+                <a class="nav-item" href="./portfolio.html">Портфоліо</a>
               </li>
               <li><a class="nav-item" href="./index.html">Контакти</a></li>
             </ul>
           </div>
         </nav>
         <!-- контакти mailto phoneto-->
-        <div class="box-contacts">
+        <div>
           <ul class="contacts">
             <li>
               <a class="contacts-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -55,9 +55,10 @@
 
     <main>
       <section class="section">
-        <h1 class="visually-hidden">Селектори фільтру</h1>
         <!-- sort menu -->
         <div class="container">
+          <h1 class="visually-hidden">Селектори фільтру</h1>
+
           <ul class="sort-buttons">
             <li>
               <button class="button-filter active-btn" type="button">Усі</button>
@@ -71,135 +72,101 @@
               <button class="button-filter" type="button">Маркетинг</button>
             </li>
           </ul>
-        </div>
-        <!-- list of projects -->
-        <ul class="container projects-list">
-          <li class="project-item">
-            <ul class="projects-list-card">
-              <li>
-                <img
-                  src="./images/projects-pic/technokryak.jpg"
-                  alt="ноутбук з відкритою сторінкою сайту"
-                  width="370"
-                />
-              </li>
-              <li class="card-description">
+          <!-- list of projects -->
+          <ul class="projects-list">
+            <li class="project-item">
+              <img
+                src="./images/projects-pic/technokryak.jpg"
+                alt="ноутбук з відкритою сторінкою сайту"
+                width="370"
+              />
+              <div class="card-description">
                 <h3 class="projects-list-title">Технокряк</h3>
                 <p class="projects-list-desription">Веб сайт</p>
-              </li>
-            </ul>
-          </li>
-          <li class="project-item">
-            <ul class="projects-list-card">
-              <li>
-                <img
-                  src="./images/projects-pic/poster-neworlean.jpg"
-                  alt="постер з гравцями у баскетбол"
-                  width="370"
-                />
-              </li>
-              <li class="card-description">
+              </div>
+            </li>
+            <li class="project-item">
+              <img
+                src="./images/projects-pic/poster-neworlean.jpg"
+                alt="постер з гравцями у баскетбол"
+                width="370"
+              />
+              <div class="card-description">
                 <h3 class="projects-list-title">Постер New Orlean vs Golden Star</h3>
                 <p class="projects-list-desription">Дизайн</p>
-              </li>
-            </ul>
-          </li>
-          <li class="project-item">
-            <ul class="projects-list-card">
-              <li>
-                <img src="./images/projects-pic/seafood.jpg" alt="логотип ресторану" width="370" />
-              </li>
-              <li class="card-description">
+              </div>
+            </li>
+            <li class="project-item">
+              <img src="./images/projects-pic/seafood.jpg" alt="логотип ресторану" width="370" />
+              <div class="card-description">
                 <h3 class="projects-list-title">Ресторан Seafood</h3>
                 <p class="projects-list-desription">Додаток</p>
-              </li>
-            </ul>
-          </li>
-          <li class="project-item">
-            <ul class="projects-list-card">
-              <li>
-                <img src="./images/projects-pic/prime.jpg" alt="навушники" width="370" />
-              </li>
-              <li class="card-description">
+              </div>
+            </li>
+            <li class="project-item">
+              <img src="./images/projects-pic/prime.jpg" alt="навушники" width="370" />
+              <div class="card-description">
                 <h3 class="projects-list-title">Проект Prime</h3>
                 <p class="projects-list-desription">Маркетинг</p>
-              </li>
-            </ul>
-          </li>
-          <li class="project-item">
-            <ul class="projects-list-card">
-              <li>
-                <img
-                  src="./images/projects-pic/boxes.jpg"
-                  alt="дві різні поштові коробки"
-                  width="370"
-                />
-              </li>
-              <li class="card-description">
+              </div>
+            </li>
+            <li class="project-item">
+              <img
+                src="./images/projects-pic/boxes.jpg"
+                alt="дві різні поштові коробки"
+                width="370"
+              />
+
+              <div class="card-description">
                 <h3 class="projects-list-title">Проект Boxes</h3>
                 <p class="projects-list-desription">Додаток</p>
-              </li>
-            </ul>
-          </li>
-          <li class="project-item">
-            <ul class="projects-list-card">
-              <li>
-                <img
-                  src="./images/projects-pic/inspiration.jpg"
-                  alt="монітор з відкритою сторінкою сайту"
-                  width="370"
-                />
-              </li>
-              <li class="card-description">
+              </div>
+            </li>
+            <li class="project-item">
+              <img
+                src="./images/projects-pic/inspiration.jpg"
+                alt="монітор з відкритою сторінкою сайту"
+                width="370"
+              />
+              <div class="card-description">
                 <h3 class="projects-list-title">inspirations has no Borders</h3>
                 <p class="projects-list-desription">Веб сайт</p>
-              </li>
-            </ul>
-          </li>
-          <li class="project-item">
-            <ul class="projects-list-card">
-              <li>
-                <img src="./images/projects-pic/limited-edition.jpg" alt="журнал" width="370" />
-              </li>
-              <li class="card-description">
+              </div>
+            </li>
+            <li class="project-item">
+              <img src="./images/projects-pic/limited-edition.jpg" alt="журнал" width="370" />
+
+              <div class="card-description">
                 <h3 class="projects-list-title">Видання Limited edition</h3>
                 <p class="projects-list-desription">Дизайн</p>
-              </li>
-            </ul>
-          </li>
-          <li class="project-item">
-            <ul class="projects-list-card">
-              <li>
-                <img src="./images/projects-pic/LAB.jpg" alt="Бірка" width="370" />
-              </li>
-              <li class="card-description">
+              </div>
+            </li>
+            <li class="project-item">
+              <img src="./images/projects-pic/LAB.jpg" alt="Бірка" width="370" />
+              <div class="card-description">
                 <h3 class="projects-list-title">Проект LAB</h3>
                 <p class="projects-list-desription">Маркетинг</p>
-              </li>
-            </ul>
-          </li>
-          <li class="project-item">
-            <ul class="projects-list-card">
-              <li>
-                <img
-                  src="./images/projects-pic/growing-business.jpg"
-                  alt="робота за ноутбуком"
-                  width="370"
-                />
-              </li>
-              <li class="card-description">
+              </div>
+            </li>
+            <li class="project-item">
+              <img
+                src="./images/projects-pic/growing-business.jpg"
+                alt="робота за ноутбуком"
+                width="370"
+              />
+              <div class="card-description">
                 <h3 class="projects-list-title">Growing Business</h3>
                 <p class="projects-list-desription">Додаток</p>
-              </li>
-            </ul>
-          </li>
-        </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!-- підвал -->
     <footer class="footer">
-      <div class="container padding-footer">
+      <div class="container">
         <!-- логотип футера-->
         <a class="logo-web" href="./index.html"
           >Web<span class="logo-studio-footer">Studio</span></a

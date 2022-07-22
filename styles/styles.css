@@ -12,7 +12,7 @@
   --logo-studio-dark: #000000;
   --logo-studio-light: #ffffff;
   --bg-head-color: #ffffff;
-  --bg-foot-color: #2f303a;
+  --bg-footer-color: #2f303a;
   --body-color: #ffffff;
   --header-dark-color: #212121;
   --borders-color: #ececec;
@@ -26,14 +26,46 @@
 }
 .body {
   font-family: 'Roboto';
-  color: var(--main-header-color-color);
-  background-color: var(--bg-body-color);
+  color: var(--main-header-color);
+  background-color: var(--bg-head-color);
   margin-top: 0px;
+}
+
+/*Обнулення стилів браузера*/
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 ul {
   list-style: none;
-  margin: 0 auto;
-  padding-inline-start: 0px;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
 }
 
 .contacts-item:hover,
@@ -133,6 +165,7 @@ li > .accent-button {
   gap: 50px;
 }
 .contacts-item {
+  padding: 32px 0;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -145,11 +178,11 @@ li > .accent-button {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background: var(--bg-foot-color);
+  background: var(--bg-footer-color);
 }
 .hero-text-button {
   width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -160,7 +193,6 @@ li > .accent-button {
 .button-order {
   width: 200px;
   padding: 9px 0px;
-  margin-top: 30px;
   border-radius: 4px;
   border-style: none;
   background-color: var(--btn-bg-accent-color);
@@ -187,13 +219,9 @@ li > .accent-button {
 }
 .features-card {
   width: 270px;
-  margin: 0 15px;
 }
-.features-card:first-child {
-  margin-left: 0px;
-}
-.features-card:last-child {
-  margin-right: 0px;
+.features-card:not(:last-child) {
+  margin-right: 30px;
 }
 .features-card-header {
   text-transform: uppercase;
@@ -224,11 +252,10 @@ li > .accent-button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-dark-color);
-  margin: 0px auto;
+  margin-bottom: 50px;
 }
 .directions-list {
   display: flex;
-  margin-top: 50px;
   gap: 30px;
 }
 .directions-item {
@@ -245,7 +272,6 @@ li > .accent-button {
 .team-list {
   display: flex;
   gap: 30px;
-  padding-top: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -259,9 +285,11 @@ li > .accent-button {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.wrap {
+  padding: 30px;
+}
 .team-header {
-  margin-top: 30px;
-
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -276,24 +304,17 @@ li > .accent-button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-description-color);
-  margin-top: 10px;
-  margin-bottom: 30px;
 }
 /* Підвал ===================================================*/
 .footer {
   padding: 60px 0;
-  margin: 0 auto;
-  background-color: var(--bg-foot-color);
-}
-.padding-footer {
-  padding: 60px 15px;
+  background-color: var(--bg-footer-color);
 }
 .logo-studio-footer {
   color: var(--logo-studio-light);
 }
 .address {
   margin-top: 20px;
-  list-style: normal;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -301,8 +322,8 @@ li > .accent-button {
   letter-spacing: 0.03em;
 }
 
-.addr-item:not(:first-child) {
-  margin-top: 9px;
+.addr-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-contacts-addr {
   text-decoration: none;
