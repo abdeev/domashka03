@@ -310,11 +310,14 @@ li > .accent-button {
   padding: 60px 0;
   background-color: var(--bg-footer-color);
 }
+.logo-footer {
+  margin-bottom: 20px;
+}
 .logo-studio-footer {
   color: var(--logo-studio-light);
 }
 .address {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -326,7 +329,6 @@ li > .accent-button {
   margin-bottom: 9px;
 }
 .footer-contacts-addr {
-  text-decoration: none;
   color: var(--bg-head-color);
 }
 .footer-contacts {
