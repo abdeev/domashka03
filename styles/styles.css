@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 :root {
   /* color palette */
   --main-header-color: #000000;
