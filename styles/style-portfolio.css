@@ -38,11 +38,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
 }
 
 .project-item {
-  width: 370px;
   background-color: var(--bg-head-color);
 }
 .card-description {
@@ -62,7 +60,7 @@
 .projects-list-desription {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--text-description-color);
 }
